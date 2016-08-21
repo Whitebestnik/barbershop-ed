@@ -1,0 +1,50 @@
+body {
+    background: #000000 url("../img/barbershop-index-grid.jpg") no-repeat 50% 3px;
+    background-size: 1122px auto;
+    margin: 0;
+}
+.main-header {
+    margin-bottom: 60px;
+    /* */
+
+    background-color: brown;
+    opacity: 0.5;
+}
+.container {
+    width: 940px;
+    padding: 0 10px;
+    margin: 0 auto;
+    /* */
+    min-height: 70px;
+    opacity: 0.5;
+    background-color: aqua;
+}
+.main-navigation {
+    width: 780px;
+    float: left;
+    /* */
+    min-height: 70px;
+    opacity: 0.5;
+    background-color: chartreuse;
+}
+.user-block {
+    width: 140px;
+    float: right;
+    /* */
+    min-height: 70px;
+    opacity: 0.5;
+    background-color: red;
+}
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.index-logo {
+    height: 204px;
+    width: 368px;
+    margin: 0 auto;
+    /* */
+    opacity: 0.5;
+    background-color: deeppink;
+}
