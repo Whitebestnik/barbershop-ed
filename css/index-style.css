@@ -1,50 +1,117 @@
 body {
-    background: #000000 url("../img/barbershop-index-grid.jpg") no-repeat 50% 3px;
+    background: #000000 url("../img/barbershop-index-grid.jpg") no-repeat 50% 0px;
     background-size: 1122px auto;
     margin: 0;
-}
-.main-header {
-    margin-bottom: 60px;
-    /* */
-
-    background-color: brown;
-    opacity: 0.5;
-}
-.container {
-    width: 940px;
-    padding: 0 10px;
-    margin: 0 auto;
-    /* */
-    min-height: 70px;
-    opacity: 0.5;
-    background-color: aqua;
-}
-.main-navigation {
-    width: 780px;
-    float: left;
-    /* */
-    min-height: 70px;
-    opacity: 0.5;
-    background-color: chartreuse;
-}
-.user-block {
-    width: 140px;
-    float: right;
-    /* */
-    min-height: 70px;
-    opacity: 0.5;
-    background-color: red;
+    height: 2000px;
 }
 .clearfix::after {
     content: "";
     display: table;
     clear: both;
 }
+.main-header {
+    margin-bottom: 57px;
+    /* */
+
+}
+.container {
+    width: 940px;
+    padding: 0 10px;
+    margin: 0 auto;
+    /* */
+    background-color: deepskyblue;
+    opacity: 0.5;
+}
+.main-navigation {
+    float: left;
+    width: 780px;
+    min-height: 72px;
+    /* */
+    background-color: darksalmon;
+    opacity: 0.8;
+}
+.user-block {
+    float: right;
+    width: 140px;
+    min-height: 72px;
+    /* */
+    background-color: darksalmon;
+    opacity: 0.8;
+}
 .index-logo {
     height: 204px;
     width: 368px;
     margin: 0 auto;
+    margin-bottom: 26px;
     /* */
+    background-color: darksalmon;
+    opacity: 0.8;
+}
+.features-item {
+    float: left;
+    width: 300px;
+    margin-right: 20px;
+    /* */
+    min-height: 175px;
+    background-color: darksalmon;
+    opacity: 0.8;
+}
+.features-item:last-child {
+    margin-right: 0;
+}
+.features {
+    margin-bottom: 80px;
+}
+.index-content {
+    padding: 50px 80px;
+    margin-bottom: 35px;
+    /* */
+    background-color: darkgreen;
     opacity: 0.5;
-    background-color: deeppink;
+}
+.index-content-left {
+    min-height: 330px;
+    float: left;
+    width: 380px;
+    /* */
+    background-color: darksalmon;
+    opacity: 0.8;
+}
+.index-content-right {
+    min-height: 330px;
+    float: right;
+    width: 300px;
+    /* */
+    background-color: darksalmon;
+    opacity: 0.8;
+}
+.main-footer {
+    margin-top: 65px;
+    padding-top: 60px;
+    padding-bottom: 40px;
+}
+.footer-contacts {
+    min-height: 90px;
+    float: left;
+    width: 320px;
+    margin-right: 60px;
+    /* */
+    background-color: darksalmon;
+    opacity: 0.8;
+}
+.footer-social {
+    min-height: 90px;
+    float: left;
+    width: 180px;
+    /* */
+    background-color: darksalmon;
+    opacity: 0.8;
+}
+.footer-copyright {
+    min-height: 90px;
+    float: right;
+    width: 180px;
+    /* */
+    background-color: darksalmon;
+    opacity: 0.8;
 }
