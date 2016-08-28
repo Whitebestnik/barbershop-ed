@@ -1,8 +1,36 @@
+/*----------Стили для сетки----------*/
+
+.color-red {
+    outline: red dashed 2px;
+    background: rgba(255, 0, 0, 0.3);
+}
+.color-green {
+    outline: greenyellow dashed 2px;
+    background: rgba(0, 255, 0, 0.3);
+}
+.color-blue {
+    outline: yellow dashed 2px;
+    background: rgba(0, 0, 255, 0.3);
+}
+/*----------Стили для сетки----------*/
+
+
+
 body {
-    background: #000000 url("../img/barbershop-index-grid.jpg") no-repeat 50% 0px;
+    background-color: #000000;
     background-size: 1122px auto;
     margin: 0;
-    height: 2000px;
+    min-width: 960px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 24px;
+    font-family: "PT Sans Narrow", "Arial", sans-serif;
+    text-transform: uppercase;
+    color: white;
+/*----------Временный фон----------*/
+    background: url("barbershop-index.png") no-repeat center top;
+/*----------Временный фон----------*/
+
 }
 .clearfix::after {
     content: "";
@@ -11,50 +39,114 @@ body {
 }
 .main-header {
     margin-bottom: 57px;
-    /* */
-
+    color: white;
+    background-color: black;
 }
 .container {
     width: 940px;
     padding: 0 10px;
     margin: 0 auto;
-    /* */
-    background-color: deepskyblue;
-    opacity: 0.5;
 }
 .main-navigation {
     float: left;
     width: 780px;
-    min-height: 72px;
-    /* */
-    background-color: darksalmon;
-    opacity: 0.8;
+}
+.main-navigation ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    font-size: 0;
+}
+.main-navigation li {
+    display: inline-block;
+    vertical-align: top;
+    font-size: 16px;
+    line-height: 20px;
+}
+.main-navigation a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 26px 20px;
+}
+.main-navigation a:hover {
+    background: #242424;
 }
 .user-block {
     float: right;
-    width: 140px;
-    min-height: 72px;
-    /* */
-    background-color: darksalmon;
-    opacity: 0.8;
+    max-width: 140px;
+}
+.login {
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    padding: 26px 20px;
+    padding-left: 50px;
+    font-size: 16px;
+    line-height: 20px;
+    color: white;
+    text-decoration: none;
+}
+.login:hover {
+    background-color: #242424;
+}
+/* Нужно будет доделать иконку после того как создам спрайт, на видео 1:20 */
+.login::before {
+    position: absolute;
+    top: 28px;
+    left: 20px;
+    content: "";
+    width: 18px;
+    height: 18px;
+    opacity: 0.3;
+    background-color: white;
+}
+/* Нужно будет доделать иконку после того как создам спрайт, на видео 1:20 */
+.login:hover::before {
+    opacity: 1;
 }
 .index-logo {
     height: 204px;
     width: 368px;
     margin: 0 auto;
-    margin-bottom: 26px;
-    /* */
-    background-color: darksalmon;
-    opacity: 0.8;
+    margin-bottom: 20px;
 }
+/*----------Вставить нормальное лого----------*/
+.index-logo img {
+    width: 368px;
+    height: 204px;
+}
+/*----------Вставить нормальное лого----------*/
 .features-item {
     float: left;
     width: 300px;
     margin-right: 20px;
-    /* */
-    min-height: 175px;
-    background-color: darksalmon;
-    opacity: 0.8;
+    text-align: center;
+}
+.features-name {
+    position: relative;
+    display: block;
+    font-size: 30px;
+    line-height: 42px;
+    margin-bottom: 32px;
+    padding-bottom: 37px;
+    /*Тестовые настройки*/
+}
+.features-name::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    display: block;
+    margin-left: -10px;
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    transform: rotate(45deg);
+}
+.features-item p {
+    margin: 10px;
+    margin-bottom: 0;
 }
 .features-item:last-child {
     margin-right: 0;
@@ -65,25 +157,16 @@ body {
 .index-content {
     padding: 50px 80px;
     margin-bottom: 35px;
-    /* */
-    background-color: darkgreen;
-    opacity: 0.5;
 }
 .index-content-left {
     min-height: 330px;
     float: left;
     width: 380px;
-    /* */
-    background-color: darksalmon;
-    opacity: 0.8;
 }
 .index-content-right {
     min-height: 330px;
     float: right;
     width: 300px;
-    /* */
-    background-color: darksalmon;
-    opacity: 0.8;
 }
 .main-footer {
     margin-top: 65px;
@@ -95,23 +178,14 @@ body {
     float: left;
     width: 320px;
     margin-right: 60px;
-    /* */
-    background-color: darksalmon;
-    opacity: 0.8;
 }
 .footer-social {
     min-height: 90px;
     float: left;
     width: 180px;
-    /* */
-    background-color: darksalmon;
-    opacity: 0.8;
 }
 .footer-copyright {
     min-height: 90px;
     float: right;
     width: 180px;
-    /* */
-    background-color: darksalmon;
-    opacity: 0.8;
 }
