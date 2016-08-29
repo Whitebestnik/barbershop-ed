@@ -17,7 +17,6 @@
 
 
 body {
-    background-color: #000000;
     background-size: 1122px auto;
     margin: 0;
     min-width: 960px;
@@ -27,10 +26,7 @@ body {
     font-family: "PT Sans Narrow", "Arial", sans-serif;
     text-transform: uppercase;
     color: white;
-/*----------Временный фон----------*/
-    background: url("barbershop-index.png") no-repeat center top;
-/*----------Временный фон----------*/
-
+    background: #000000 url("../img/background.png") no-repeat center top;
 }
 .clearfix::after {
     content: "";
@@ -67,7 +63,7 @@ body {
     display: block;
     color: white;
     text-decoration: none;
-    padding: 26px 20px;
+    padding: 26px 19px;
 }
 .main-navigation a:hover {
     background: #242424;
@@ -111,12 +107,11 @@ body {
     margin: 0 auto;
     margin-bottom: 20px;
 }
-/*----------Вставить нормальное лого----------*/
 .index-logo img {
     width: 368px;
     height: 204px;
+    margin-left: 5px;
 }
-/*----------Вставить нормальное лого----------*/
 .features-item {
     float: left;
     width: 300px;
@@ -130,7 +125,6 @@ body {
     line-height: 42px;
     margin-bottom: 32px;
     padding-bottom: 37px;
-    /*Тестовые настройки*/
 }
 .features-name::after {
     content: "";
@@ -148,16 +142,24 @@ body {
     margin: 10px;
     margin-bottom: 0;
 }
+.features-item p span {
+    letter-spacing: 0.01em;
+}
 .features-item:last-child {
     margin-right: 0;
 }
 .features {
     margin-bottom: 80px;
 }
+/*----------------------------------Нужно будет вставить нормальный фон */
 .index-content {
     padding: 50px 80px;
     margin-bottom: 35px;
+    color: black;
+    background: #f8f5f2;
+
 }
+/*----------------------------------Нужно будет вставить нормальный фон */
 .index-content-left {
     min-height: 330px;
     float: left;
