@@ -234,6 +234,62 @@ body {
 .btn-news {
     margin-top: 5px;
 }
+.btn-contacts {
+    margin-top: 20px;
+}
+.gallery {
+    position: relative;
+    height: 260px;
+    margin-top: 35px;
+}
+.gallery-content {
+    height: 164px;
+    margin: 0;
+    background-color: #cccccc;
+    border: 7px solid #ffffff;
+}
+.gallery-content img {
+    width: 286px;
+    height: 164px;
+}
+.gallery .btn {
+    position: absolute;
+    bottom: 0;
+    width: 140px;
+    margin: 0;
+}
+.gallery-prev {
+    left: 0;
+}
+.gallery-next {
+    right: 0;
+}
+.appointment-form input {
+    background-color: #f9f6f3;
+    border: 2px solid black;
+    outline: none;
+    font-size: 14px;
+    line-height: 24px;
+    font-family: "PT Sans Narrow", "Arial", sans-serif;
+    text-transform: uppercase;
+    color: black;
+    width: 106px;
+    padding: 7px 15px;
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+.appointment-form input:nth-child(2n) {
+    margin-right: 0;
+}
+.appointment-form input:focus {
+    border: 2px solid #663d15;
+}
+.appointment-form .btn {
+    clear: both;
+    width: 100%;
+    margin-top: 15px;
+}
 .main-footer {
     margin-top: 65px;
     padding-top: 60px;
