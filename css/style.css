@@ -97,7 +97,7 @@ body {
     opacity: 0.3;
     background-image: url("../img/sprites.png");
     background-repeat: no-repeat;
-    background-position: 0 -32px;
+    background-position: -4px -99px;
 }
 .login:hover::before {
     opacity: 1;
@@ -150,7 +150,7 @@ body {
     margin-right: 0;
 }
 .features {
-    margin-bottom: 80px;
+    margin-bottom: 79px;
 }
 .index-content {
     padding: 50px 80px;
@@ -277,7 +277,8 @@ body {
     padding: 7px 15px;
     float: left;
     margin-right: 20px;
-    margin-bottom: 20px;
+    margin-top: 3px;
+    margin-bottom: 18px;
 }
 .appointment-form input:nth-child(2n) {
     margin-right: 0;
@@ -291,23 +292,89 @@ body {
     margin-top: 15px;
 }
 .main-footer {
-    margin-top: 65px;
-    padding-top: 60px;
+    margin-top: 64px;
+    padding-top: 55px;
     padding-bottom: 40px;
+    color: #ffffff;
+    background: #252525 url(../img/pattern-black.jpg);
 }
 .footer-contacts {
-    min-height: 90px;
     float: left;
     width: 320px;
-    margin-right: 60px;
+    margin-right: 62px;
+    
+}
+.footer-contacts a {
+    color: #ffffff;
+}
+.footer-contacts a:hover {
+    text-decoration: none;
 }
 .footer-social {
-    min-height: 90px;
     float: left;
     width: 180px;
+    text-align: center;
+}
+.footer-social p {
+    margin: 0;
+    margin-bottom: 15px;
 }
 .footer-copyright {
-    min-height: 90px;
     float: right;
-    width: 180px;
+    max-width: 180px;
+}
+.footer-copyright .btn {
+    margin-right: 0;
+    padding: 10px 23px;
+}
+.footer-copyright .btn:hover {
+    background-color: #ffffff;
+    color: #000000;
+}
+.footer-copyright p {
+    margin: 0;
+    margin-bottom: 15px;
+    text-align: center;
+}
+.social-btn {
+    display: inline-block;
+    width: 43px;
+    height: 43px;
+    margin: 0 2px;
+    background: #000000 url("../img/sprites.png") no-repeat center;
+
+    font-size: 0;
+    vertical-align: top;
+    text-decoration: none;
+    outline: 4px solid black;
+    outline-offset: -4px;
+    
+    transition: 
+        background-color 0.7s;
+}
+.social-btn:hover {
+    outline: 4px solid black;
+    outline-offset: -4px;
+    background: #ffffff url("../img/sprites.png") no-repeat center;
+}
+.social-btn-vk { 
+    background-position: 5px -112px; 
+} 
+.social-btn-fb { 
+    background-position: 11px -58px; 
+} 
+.social-btn-inst { 
+    background-position: 6px -142px; 
+}
+.social-btn-vk:hover {
+    background-position: 4px -169px;
+    outline: 4px solid #ffffff;
+}
+.social-btn-fb:hover {
+    background-position: 10px -26px;
+    outline: 4px solid #ffffff;
+}
+.social-btn-inst:hover {
+    background-position: 7px 6px;
+    outline: 4px solid #ffffff;
 }
